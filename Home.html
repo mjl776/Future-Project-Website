@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inria+Serif&family=Inter&display=swap" rel="stylesheet">
     </head>
 
     <style>
 
-        .title-of-site {
-            float: left;
-            padding: 30px;
-            font-size: 20px;
-            color: white;
-        }
-
-        .navbar {
-            margin: 0;
-            padding: 0;
-            background-color:#274E56;
-            position: fixed;
-            width: 100%;
-        }
-
-        nav ul {
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-        }
-
-        nav li {
-            display: inline-block;
-            margin-left: 66px;
+        .title {
+            font-family: Inria Serif;
+            font-size: 45px;
+            padding-top: 100px;
+            padding-left: 200px;
             position: relative;
-            padding: 30px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
+            color: white;
         }
         
-        nav a {
+        .under-text {
+            font-size: 20px;
+            padding-left: 200px;
+            position: relative;
+            color:green;
+            font-family: Fjalla One;
+        }
+        .background-image {
+            padding-left: 251px;
+            position: absolute;
+            padding-top: 80px;
+            height: 400px;
+            width: 600px;
+        }
+        body { 
+            background-color: black;
+        }
+        .colored-box {
+            background-color: grey;
+            padding: 10px;
+            height: 200px;
+            width: 300px;
+            top: 400px;
+            position:absolute; 
+            left:200px;  
+            font-family: Inria Serif;     
+            color: white;    
+        }
+        
+        .next-button {
+            position: absolute;
+            padding-top: 80px;
+            height: 400px;
+            width: 600px;
+            top: 450px;
+            padding-left: 700px;
+        }
+        
+        .next-button a {
             text-decoration: none;
-            color: white;
+            color:white;
+            font-size: 30px;
+            border: solid blue;
+            background-color: blue;
+            padding: 3px;
+            border-radius: 8px;
         }
 
-        body {
-            font-family: Inter;
-            margin: 0px;
-            padding: 0px;
-        }
 
-        html {
-            background-image: url('./background_image/background.jpg');
-             -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        .text-on-page {
-            float: left;
-            color: white;
-            padding: 30px;
-            line-height: 350px;
-            font-size: 40px;
-        }
     </style>
     <body>
         <div class = "container">
-            <div class = "navbar">
-                <div class = "title-of-site">
-                    Microchip
-                </div>
-                <nav>
-                    <ul>
-                        <li> <a href="url"> Home </a> </li>
-                        <li> <a href="url"> About </a> </li>
-                        <li> <a href="url"> Surgery </a> </li>
-                        <li> <a href="url"> Purpose </a> </li>
-                        <li> <a href="url"> Testimonials </a> </li>
-                    </ul>
-                </nav>
+            <img src = "./background_image/background.jpg" alt = "background image" class = "background-image"/>
+            <div class = "title">
+                Micro-2065
             </div>
-            <p class = "text-on-page">
-                Walk into the forefront of decisive technology
-            </p>
+            <div class = "under-text"> 
+                FDA approved since 2065
+            </div>
         </div>
+        <div class = "colored-box">
+            The world needs to make decisions. 
+            In order to make those decisions, 
+            we must consider important information. This important information can be considered
+            You have now turned 25 and now is the time you must show that you can be decisive.
+            However, we are here to help with Mirco-2065, a government implemented microchip
+        </div>
+
+        <div class = "next-button">
+            <a href="./How_it_works.html"> How does the microchip work? </a>
+        </div>
+
     </body>
 </html>
